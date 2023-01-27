@@ -1,5 +1,5 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import { logo } from './assets';
+import { logo } from '../../docs/assets';
 import { CreateButton, LanguageSelector } from './components';
 import { Home, CreatePost } from './pages';
 import { Provider } from 'react-redux';
@@ -15,7 +15,7 @@ export const App = () => {
       
         <header className='w-full flex justify-between items-center bg-black sm:px-8 px-4 py-4 '>
 
-          <Link to="/">
+          <Link to="/airtistic">
             <img src={logo} alt="logo" className='w-28 object-contain' />
           </Link>
 
@@ -33,7 +33,7 @@ export const App = () => {
 
           <Routes>
 
-            <Route path="/" element={<Home />} />
+            <Route path="/airtistic" element={<Home />} />
             <Route path="/create-post" element={<CreatePost />} />
 
           </Routes>
